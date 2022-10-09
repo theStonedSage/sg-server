@@ -33,6 +33,8 @@ const entriesRouter = require("./routes/entry");
 
 app.use("/", entriesRouter);
 
-app.listen(3000, (err) => {
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, (err) => {
   console.log("server started");
 });
